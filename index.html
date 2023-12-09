@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>당뇨병 진단</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>당뇨병 진단 서비스</h2>
+        <p>당뇨병 진단을 위해 아래 정보를 입력해주세요.</p>
+        <button type="random">무작위 데이터 입력</button>
+        <p></p>
+        <form id="predictionForm">
+            <input type="number" id="n_pregnant" placeholder="임신 횟수" required><br>
+            <input type="number" id="glucose_concentration" placeholder="공복 혈당 농도" required><br>
+            <input type="number" id="blood_pressure" placeholder="혈압 (mm Hg)" required><br>
+            <input type="number" id="skin_thickness" placeholder="피부 두께 (mm)" required><br>
+            <input type="number" id="serum_insulin" placeholder="혈청 인슐린 (mu U/ml)" required><br>
+            <input type="number" step="0.1" id="BMI" placeholder="BMI" required><br>
+            <input type="number" step="0.001" id="pedigree_function" placeholder="가족력" required><br>
+            <input type="number" id="age" placeholder="나이" required><br>
+            <button type="submit" id="diagnoseButton">진단하기</button>
+        </form>
+        <p></p>
+        <div id="result"><br></div>
+
+        <div class="disclaimer">
+            본 서비스는 단순한 참고용 정보를 제공하는 것으로, 정확한 의학적 진단이나 치료를 대체하지 않습니다. 본 서비스를 통해 제공되는 정보와 결과는 전문적인 의료 조언, 진단, 또는 치료를 대신할 수 없으며, 어떠한 의료적 결정에도 사용되어서는 안 됩니다. 본 서비스를 이용함으로써 발생할 수 있는 모든 문제에 대해 당사는 책임을 지지 않습니다. 정확한 진단이나 치료를 위해서는 반드시 전문 의료기관을 방문하시기 바랍니다.
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

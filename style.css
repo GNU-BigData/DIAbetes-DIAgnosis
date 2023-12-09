@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'TAEBAEKfont';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/TAEBAEKfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'TAEBAEKfont';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    width: 90%;
+    max-width: 800px;
+    overflow-wrap: break-word; /* 긴 단어나 주소가 컨테이너를 벗어나지 않도록 처리 */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+input[type=number] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    font-family: 'TAEBAEKfont';
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+#result {
+    text-align: center;
+}
+
+button[type=random] {
+    font-family: 'TAEBAEKfont';
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto; /* Add this line to center the button horizontally */
+    display: block; /* Add this line to make the button a block element */
+    width: fit-content; /* Add this line to make the button width fit its content */
+    text-align: center; /* Add this line to center the button text horizontally */
+}
+
+
+button[type=random]:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: grey;
+    color: white;
+}
+
+.disclaimer {
+    font-family: 'sans-serif';
+    font-size: 0.5em; /* 작은 글씨 크기 */
+    color: grey; /* 회색 글씨 */
+    margin-top: 50px; /* 위쪽 여백 */
+    padding: 20px; /* 내부 여백 */
+    border-top: 1px solid #ddd; /* 상단에 경계선 추가 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+}
